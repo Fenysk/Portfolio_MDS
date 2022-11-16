@@ -55,6 +55,8 @@ table {
 
 header {
   z-index: 2;
+  position: fixed;
+  top: 0;
   height: 8vh;
   width: 100%;
   background-color: black;
@@ -158,6 +160,16 @@ header nav ul li .links--cv {
   border-radius: 6px;
   font-weight: bold;
   background: linear-gradient(25deg, #fd4800, #FF9C00);
+}
+
+.page {
+  width: 100%;
+  height: 92vh;
+  background-color: gray;
+}
+.page--home {
+  margin-top: 8vh;
+  background-color: #330000;
 }
 
 /*# sourceMappingURL=style.css.map */

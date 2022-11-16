@@ -1,3 +1,18 @@
 @import 'variables';
 @import 'reset';
+
+$height_header: 8vh;
 @import 'header';
+
+.page {
+    width: 100%;
+    height: calc(100vh - $height_header);
+    background-color: gray;
+
+    &--home{
+        margin-top: $height_header;
+        background-color: #330000;
+    }
+}
+
+@import 'home';
