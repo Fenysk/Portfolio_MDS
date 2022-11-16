@@ -1,3 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  z-index: 2;
+  height: 8vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+header .branding {
+  height: 8vh;
+  width: 8vh;
+  background-color: black;
+  margin-left: 12px;
+}
+header .branding img {
+  height: 70%;
+  width: 70%;
+  margin: 12.5%;
+}
+header .branding h1 {
+  width: 0px;
+  overflow: hidden;
+}
+header .button_navigation {
+  height: 8vh;
+  width: 8vh;
+  background-color: black;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 12px;
+}
+header .button_navigation .button_burger {
+  width: 70%;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+header .button_navigation .button_burger::before, header .button_navigation .button_burger::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+header .button_navigation .button_burger::before {
+  top: 20%;
+}
+header .button_navigation .button_burger::after {
+  bottom: 20%;
+}
+header .button_navigation.open .button_burger {
+  background: transparent;
+}
+header .button_navigation.open .button_burger::before {
+  top: 46%;
+  transform: rotate(-45deg);
+}
+header .button_navigation.open .button_burger::after {
+  bottom: 46%;
+  transform: rotate(45deg);
+}
+header nav {
+  z-index: -1;
+  position: fixed;
+  top: 8vh;
+  right: 0;
+  width: 100%;
+  height: calc(40% - 8vh);
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-140%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav.open {
+  transform: translateY(0);
+}
+header nav ul {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+header nav ul li {
+  margin: 12px;
+}
+header nav ul li .links {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+header nav ul li .links--cv {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  background: linear-gradient(25deg, #fd4800, #FF9C00);
+}
 
 /*# sourceMappingURL=style.css.map */

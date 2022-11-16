@@ -1,0 +1,141 @@
+@import 'mixin';
+
+header {
+    z-index: 2;
+
+    $height_header: 8vh;
+
+    @include block($height_header, 100%, black);
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    .branding {
+        @include block($height_header, $height_header, black);
+
+        margin-left: 12px;
+
+        img {
+            height: 70%;
+            width: 70%;
+            margin: 12.5%;
+        }
+
+        h1 {
+            width: 0px;
+            overflow: hidden;
+        }
+    }
+
+    .button_navigation {
+        @include block($height_header, $height_header, black);
+
+        z-index: 3;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        margin-right: 12px;
+
+        .button_burger {
+            width: 70%;
+            height: 4px;
+            background-color: white;
+            border-radius: 5px;
+
+            transition: all .5s ease-in-out;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 70%;
+                height: 4px;
+                background-color: white;
+
+                border-radius: 5px;
+
+                transition: all .3s ease-in-out;
+            }
+
+            &::before {
+                top: 20%;
+            }
+            &::after {
+                bottom: 20%;
+            }
+        }
+
+        &.open {
+            .button_burger {
+                background: transparent;
+                
+                &::before{
+                    top: 46%;
+                    transform: rotate(-45deg);
+                }
+
+                &::after {
+                    bottom: 46%;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    nav {
+        z-index: -1;
+
+        position: fixed;
+        top: $height_header;
+        right: 0;
+
+        width: 100%;
+        height: calc( 40% - $height_header);
+
+        background-color: rgba($color: black, $alpha: 0.85);
+        backdrop-filter: blur(10px);
+
+        transition: all .3s ease-in-out;
+        transform: translateY(-140%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.open{
+            transform: translateY(0);
+        }
+
+        ul {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            li {
+                margin: 12px;
+
+                .links {
+                    color: white;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+
+                    &--cv {
+                        padding: 6px 12px;
+                        border-radius: 6px;
+                        font-weight: bold;
+                        background: linear-gradient(25deg,
+                                                    $degrade_orange_1,
+                                                    $degrade_orange_2 );
+                    }
+                }
+            }
+        }
+    }
+}
