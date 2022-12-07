@@ -72,7 +72,7 @@
                 z-index: 1;
             }
             
-            .fond {
+            .background {
                 border-radius: 12px;
                 position: absolute;
                 top: 3px;
@@ -87,7 +87,7 @@
                     color: $degrade_orange_2;
                 }
 
-                .fond {
+                .background {
                     background: $degrade_orange_2;
                     background: linear-gradient(180deg, rgba($degrade_orange_2,1) 0%, rgba($degrade_orange_1,1) 100%);
                 }
@@ -100,7 +100,7 @@
                     color: $degrade_bleu_2;
                 }
 
-                .fond {
+                .background {
                     background: $degrade_bleu_2;
                     background: linear-gradient(180deg, rgba($degrade_bleu_2,1) 0%, rgba($degrade_bleu_1,1) 100%);
                 }
@@ -113,7 +113,7 @@
                     color: $degrade_violet_2;
                 }
 
-                .fond {
+                .background {
                     background: $degrade_violet_2;
                     background: linear-gradient(180deg, rgba($degrade_violet_2,1) 0%, rgba($degrade_violet_1,1) 100%);
                 }
@@ -133,7 +133,7 @@
 
                 }
                 
-                .fond {
+                .background {
 
                 }
             }

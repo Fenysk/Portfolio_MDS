@@ -235,7 +235,7 @@ header nav ul li .links--cv {
   text-align: center;
   z-index: 1;
 }
-.page--home .cards_container .card .fond {
+.page--home .cards_container .card .background {
   border-radius: 12px;
   position: absolute;
   top: 3px;
@@ -250,7 +250,7 @@ header nav ul li .links--cv {
 .page--home .cards_container .card--code:hover .logo {
   color: #FF9C00;
 }
-.page--home .cards_container .card--code:hover .fond {
+.page--home .cards_container .card--code:hover .background {
   background: #FF9C00;
   background: linear-gradient(180deg, #ff9c00 0%, #fd4800 100%);
 }
@@ -260,7 +260,7 @@ header nav ul li .links--cv {
 .page--home .cards_container .card--video:hover .logo {
   color: #1EE5CE;
 }
-.page--home .cards_container .card--video:hover .fond {
+.page--home .cards_container .card--video:hover .background {
   background: #1EE5CE;
   background: linear-gradient(180deg, #1ee5ce 0%, #0376bb 100%);
 }
@@ -270,13 +270,59 @@ header nav ul li .links--cv {
 .page--home .cards_container .card--design:hover .logo {
   color: #CA2A7A;
 }
-.page--home .cards_container .card--design:hover .fond {
+.page--home .cards_container .card--design:hover .background {
   background: #CA2A7A;
   background: linear-gradient(180deg, #ca2a7a 0%, #570081 100%);
 }
 .page--home .cards_container .card:hover .header .logo {
   background-color: white;
   transition: all 500ms ease;
+}
+.page--about {
+  background-color: black;
+  height: auto;
+  padding: 10% 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.page--about .informations {
+  padding-bottom: 64px;
+}
+.page--about .informations .title {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.page--about .informations .description {
+  padding: 0 24px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.4rem;
+  text-indent: 16px;
+}
+.page--about .informations .description strong {
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #FF9C00, #fd4800);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.page--about .informations .button {
+  display: inline-block;
+  position: absolute;
+  margin-top: 12px;
+  right: 48px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  background: rgb(15, 164, 228);
+  background: linear-gradient(90deg, #fd4800 0%, #FF9C00 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
