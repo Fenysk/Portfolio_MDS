@@ -26,13 +26,13 @@
             transform:
                 perspective(500px)
                 rotateY(20deg);
-            transition: all 500ms ease;
+            transition: all 700ms ease-in-out;
             transform-style: flat;
 
             &:hover {
                 transform:
                     perspective(500px)
-                    rotateY(0deg);
+                    rotateY(360deg);
             }
 
             .frame {

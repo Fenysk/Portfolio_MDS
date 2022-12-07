@@ -174,6 +174,13 @@ header nav ul li .links--cv {
   height: auto;
   padding: 10% 0;
 }
+.page--home h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
 .page--home .cards_container {
   display: flex;
   flex-direction: column;
@@ -280,13 +287,159 @@ header nav ul li .links--cv {
   background-color: white;
   transition: all 500ms ease;
 }
+@keyframes floating1 {
+  0% {
+    transform: translate(3px, -2px) scale(0.8) rotate(5deg);
+  }
+  10% {
+    transform: translate(-3px, 3px) scale(0.8) rotate(0deg);
+  }
+  20% {
+    transform: translate(0px, -3px) scale(0.8) rotate(-5deg);
+  }
+  30% {
+    transform: translate(-3px, -3px) scale(0.8) rotate(0deg);
+  }
+  40% {
+    transform: translate(3px, 2px) scale(0.8) rotate(5deg);
+  }
+  50% {
+    transform: translate(2px, 3px) scale(0.8) rotate(0deg);
+  }
+  60% {
+    transform: translate(3px, -3px) scale(0.8) rotate(-5deg);
+  }
+  70% {
+    transform: translate(2px, 0px) scale(0.8) rotate(0deg);
+  }
+  80% {
+    transform: translate(-1px, 3px) scale(0.8) rotate(5deg);
+  }
+  90% {
+    transform: translate(2px, 2px) scale(0.8) rotate(0deg);
+  }
+  100% {
+    transform: translate(3px, -2px) scale(0.8) rotate(5deg);
+  }
+}
+@keyframes floating2 {
+  0% {
+    transform: translate(-3px, 4px) scale(0.8) rotate(0deg);
+  }
+  15% {
+    transform: translate(4px, -2px) scale(0.8) rotate(5deg);
+  }
+  24% {
+    transform: translate(3px, 2px) scale(0.8) rotate(5deg);
+  }
+  36% {
+    transform: translate(-4px, -3px) scale(0.8) rotate(0deg);
+  }
+  45% {
+    transform: translate(0px, -4px) scale(0.8) rotate(-5deg);
+  }
+  56% {
+    transform: translate(2px, 0px) scale(0.8) rotate(0deg);
+  }
+  64% {
+    transform: translate(4px, -3px) scale(0.8) rotate(-5deg);
+  }
+  75% {
+    transform: translate(-1px, 4px) scale(0.8) rotate(5deg);
+  }
+  86% {
+    transform: translate(2px, 4px) scale(0.8) rotate(0deg);
+  }
+  95% {
+    transform: translate(4px, -2px) scale(0.8) rotate(5deg);
+  }
+  100% {
+    transform: translate(-3px, 4px) scale(0.8) rotate(0deg);
+  }
+}
+@keyframes floating3 {
+  0% {
+    transform: translate(-4px, -3px) rotate(0deg);
+  }
+  13% {
+    transform: translate(-3px, 4px) rotate(0deg);
+  }
+  23% {
+    transform: translate(5px, -2px) rotate(5deg);
+  }
+  33% {
+    transform: translate(0px, -5px) rotate(-5deg);
+  }
+  43% {
+    transform: translate(5px, -3px) rotate(-5deg);
+  }
+  53% {
+    transform: translate(-1px, 5px) rotate(5deg);
+  }
+  63% {
+    transform: translate(3px, 2px) rotate(5deg);
+  }
+  73% {
+    transform: translate(2px, 4px) rotate(0deg);
+  }
+  83% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  93% {
+    transform: translate(5px, -2px) rotate(5deg);
+  }
+  100% {
+    transform: translate(-4px, 3px) rotate(0deg);
+  }
+}
+@keyframes floatingAlexis {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
 .page--about {
   background-color: black;
   height: auto;
   padding: 10% 0;
   display: flex;
-  flex-flow: column;
+  flex-flow: column-reverse;
   align-items: center;
+}
+.page--about .alexis .blobs {
+  position: relative;
+  height: 400px;
+  left: -170px;
+  top: 100px;
+}
+.page--about .alexis .blobs .blob {
+  position: absolute;
+  height: 300px;
+}
+.page--about .alexis .blobs .blob1 {
+  left: 50px;
+  top: 100px;
+  animation: floating1 20s ease-in-out infinite;
+}
+.page--about .alexis .blobs .blob2 {
+  left: -50px;
+  top: 60px;
+  transform: rotate(30deg) scale(0.8);
+  animation: floating2 20s ease-in-out infinite;
+}
+.page--about .alexis .blobs .blob3 {
+  left: -50px;
+  animation: floating3 20s ease-in-out infinite;
+}
+.page--about .alexis .blobs .blobAlexis {
+  position: absolute;
+  top: -80px;
+  animation: floatingAlexis 8s ease-in-out infinite;
 }
 .page--about .informations {
   padding-bottom: 64px;
@@ -347,11 +500,11 @@ header nav ul li .links--cv {
 .page--portfolio .projet .gauche {
   position: relative;
   transform: perspective(500px) rotateY(20deg);
-  transition: all 500ms ease;
+  transition: all 700ms ease-in-out;
   transform-style: flat;
 }
 .page--portfolio .projet .gauche:hover {
-  transform: perspective(500px) rotateY(0deg);
+  transform: perspective(500px) rotateY(360deg);
 }
 .page--portfolio .projet .gauche .frame {
   width: 40vw;
