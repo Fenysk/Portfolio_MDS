@@ -54,9 +54,9 @@ table {
 }
 
 header {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
-  top: 0;
+  bottom: 0;
   height: 8vh;
   width: 100%;
   background-color: black;
@@ -83,7 +83,6 @@ header .button_navigation {
   height: 8vh;
   width: 8vh;
   background-color: black;
-  z-index: 3;
   position: relative;
   display: flex;
   justify-content: center;
@@ -125,16 +124,15 @@ header .button_navigation.open .button_burger::after {
   transform: rotate(45deg);
 }
 header nav {
-  z-index: -1;
   position: fixed;
-  top: 8vh;
+  bottom: 8vh;
   right: 0;
   width: 100%;
   height: calc(40% - 8vh);
   background-color: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
-  transform: translateY(-140%);
+  transform: translateY(130%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,6 +154,7 @@ header nav ul li .links {
   text-decoration: none;
 }
 header nav ul li .links--cv {
+  font-size: 1.3rem;
   padding: 6px 12px;
   border-radius: 6px;
   font-weight: bold;
@@ -168,8 +167,116 @@ header nav ul li .links--cv {
   background-color: gray;
 }
 .page--home {
-  margin-top: 8vh;
   background-color: #330000;
+  background-color: black;
+  height: auto;
+  padding: 10% 0;
+}
+.page--home .cards_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.page--home .cards_container .card {
+  width: 70%;
+  height: 150px;
+  margin: 5% 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  position: relative;
+  border-radius: 15px;
+  transition: all 500ms ease;
+}
+.page--home .cards_container .card--code {
+  background: #FF9C00;
+  background: linear-gradient(180deg, #ff9c00 0%, rgba(253, 72, 0, 0) 100%);
+}
+.page--home .cards_container .card--video {
+  background: #1EE5CE;
+  background: linear-gradient(180deg, #1ee5ce 0%, rgba(3, 118, 187, 0) 100%);
+}
+.page--home .cards_container .card--design {
+  background: #CA2A7A;
+  background: linear-gradient(180deg, #ca2a7a 0%, rgba(87, 0, 129, 0) 100%);
+}
+.page--home .cards_container .card .header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+.page--home .cards_container .card .header .logo {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  color: white;
+}
+.page--home .cards_container .card .header .subject {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.page--home .cards_container .card .description {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.page--home .cards_container .card .fond {
+  border-radius: 12px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background: linear-gradient(180deg, #3F3F3F, black);
+}
+.page--home .cards_container .card--code:hover {
+  background: linear-gradient(180deg, #ff9c00 0%, #fd4800 100%);
+}
+.page--home .cards_container .card--code:hover .logo {
+  color: #FF9C00;
+}
+.page--home .cards_container .card--code:hover .fond {
+  background: #FF9C00;
+  background: linear-gradient(180deg, #ff9c00 0%, #fd4800 100%);
+}
+.page--home .cards_container .card--video:hover {
+  background: linear-gradient(180deg, #1ee5ce 0%, #0376bb 100%);
+}
+.page--home .cards_container .card--video:hover .logo {
+  color: #1EE5CE;
+}
+.page--home .cards_container .card--video:hover .fond {
+  background: #1EE5CE;
+  background: linear-gradient(180deg, #1ee5ce 0%, #0376bb 100%);
+}
+.page--home .cards_container .card--design:hover {
+  background: linear-gradient(180deg, #ca2a7a 0%, #570081 100%);
+}
+.page--home .cards_container .card--design:hover .logo {
+  color: #CA2A7A;
+}
+.page--home .cards_container .card--design:hover .fond {
+  background: #CA2A7A;
+  background: linear-gradient(180deg, #ca2a7a 0%, #570081 100%);
+}
+.page--home .cards_container .card:hover .header .logo {
+  background-color: white;
+  transition: all 500ms ease;
 }
 
 /*# sourceMappingURL=style.css.map */

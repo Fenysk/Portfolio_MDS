@@ -3,3 +3,30 @@
     width: $width;
     background-color: $color;
 }
+
+@mixin fond_degrade($radius, $couleur1, $couleur2) {
+    background: linear-gradient(
+        $radius,
+        $couleur1,
+        $couleur2
+    )
+}
+
+@mixin card {
+    width: 70%;
+    height: 150px;
+    margin: 5% 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+
+    text-decoration: none;
+
+    position: relative;
+    
+    border-radius: 15px;
+
+    transition: all 500ms ease;
+}

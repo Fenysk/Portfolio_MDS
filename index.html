@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +14,22 @@
 
 </head>
 <body>
+
+    <!-- Entête -->
     <header>
+
+        <!-- Partie de gauche, logo et texte -->
         <a class="branding" href="/">
             <img src="/ressources/images/logo/logo_blanc.png" />
             <h1>Alexis Gailleton</h1>
         </a>
 
+        <!-- Partie de droite, bouton du burger -->
         <div class="button_navigation">
             <div class="button_burger"></div>
         </div>
 
+        <!-- Menu de navigation -->
         <nav>
             <ul>
                 <li><a class="links" href="#">Qui suis-je ?</a></li>
@@ -33,14 +39,45 @@
         </nav>
     </header>
 
+    <!-- Page d'accueil -->
     <section class="page page--home">
-        <div class="card card--code"></div>
-        <div class="card card--video"></div>
-        <div class="card card--design"></div>
+
+        <!-- Cartes -->
+        <div class="cards_container">
+            <a href="#" class="card card--code">
+                <div class="header">
+                    <i class="logo fa fa-code"></i>
+                    <div class="subject">Code</div>
+                </div>
+                <p class="description">Développeur et intégrateur <br/> web responsive</p>
+                <div class="fond"></div>
+            </a>
+
+            <a href="#" class="card card--video">
+                <div class="header">
+                    <i class="logo fa fa-video"></i>
+                    <div class="subject">Vidéo</div>
+                </div>
+                <p class="description">Créateur de contenu pour <br/> les réseaux sociaux</p>
+                <div class="fond"></div>
+            </a>
+
+            <a href="#" class="card card--design">
+                <div class="header">
+                    <i class="logo fa fa-pen-nib"></i>
+                    <div class="subject">Design</div>
+                </div>
+                <p class="description">Esprit créatif, amateur en<br/> habillage graphique</p>
+                <div class="fond"></div>
+            </a>
+        </div>
+
     </section>
 
     <section class="page page--"></section>
+
     <section class="page page--"></section>
+
     <section class="page page--"></section>
 
     <!-- Javascript -->

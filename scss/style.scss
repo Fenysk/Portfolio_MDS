@@ -1,5 +1,6 @@
-@import 'variables';
 @import 'reset';
+@import 'variables';
+@import 'mixin';
 
 $height_header: 8vh;
 @import 'header';
@@ -9,10 +10,5 @@ $height_header: 8vh;
     height: calc(100vh - $height_header);
     background-color: gray;
 
-    &--home{
-        margin-top: $height_header;
-        background-color: #330000;
-    }
+    @import 'page--home';
 }
-
-@import 'home';
