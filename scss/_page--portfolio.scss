@@ -1,0 +1,123 @@
+@import 'variables';
+
+&--portfolio {
+
+    background-color: black;
+
+    height: auto;
+
+    padding: 10% 0;
+
+    .title {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 28px;
+    }
+
+    .projet {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+        margin-bottom: 48px;
+
+        .gauche {
+            position: relative;
+            transform:
+                perspective(500px)
+                rotateY(20deg);
+            transition: all 500ms ease;
+            transform-style: flat;
+
+            &:hover {
+                transform:
+                    perspective(500px)
+                    rotateY(0deg);
+            }
+
+            .frame {
+                width: 40vw;
+            }
+            .theme {
+                position: absolute;
+                bottom: -16px;
+                right: 0;
+                z-index: 1;
+
+                font-size: 0.8rem;
+                color: gray;
+            }
+        }
+
+        .droite {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+
+            padding-left: 12px;
+
+            .site, .description {
+                font-size: 0.8rem;
+                color: white;
+            }
+
+            .site {
+                margin-bottom: 12px;
+                font-weight: bold;
+                background-color: #1EE5CE;
+                background-image: linear-gradient(-45deg, #03bb68, #1EE5CE);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+            }
+
+            .description {
+                padding-left: 6px;
+            }
+
+            .link {
+                color: white;
+                font-size: 0.8rem;
+                margin-top: 12px;
+                padding-left: 6px;
+            }
+        }
+
+        &--2, &--4 {
+            flex-flow: row-reverse;
+
+            .gauche {
+                transform:
+                    perspective(500px)
+                    rotateY(-20deg);
+
+                .theme {
+                    left: 0;
+                }
+            }
+
+            .droite {
+                padding-left: 0;
+                padding-right: 12px;
+
+                .site {
+                    text-align: right;
+                }
+
+                .description {
+                    padding-left: 0;
+                    padding-right: 6px;
+                    text-align: right;
+                }
+
+                .link {
+                    text-align: right;
+                    padding-right: 6px;
+                }
+            }
+
+        }
+    }
+}

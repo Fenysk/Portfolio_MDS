@@ -19,8 +19,8 @@
     <header>
 
         <!-- Partie de gauche, logo et texte -->
-        <a class="branding" href="/">
-            <img src="/ressources/images/logo/logo_blanc.png" />
+        <a class="branding" href="#">
+            <img src="ressources/images/logo/logo_blanc.png" />
             <h1>Alexis Gailleton</h1>
         </a>
 
@@ -33,7 +33,7 @@
         <nav>
             <ul>
                 <li><a class="links" href="#about">Qui suis-je ?</a></li>
-                <li><a class="links" href="#">Portfolio</a></li>
+                <li><a class="links" href="#portfolio">Portfolio</a></li>
                 <li><a class="links links--cv" href="#">Télécharger mon CV</a></li>
             </ul>
         </nav>
@@ -95,9 +95,47 @@
         </div>
     </section>
 
-    <section class="page page--"></section>
+    <section id='portfolio' class="page page--portfolio">
+        <h2 class="title">Portfolio</h2>
 
-    <section class="page page--"></section>
+        <div class="projet projet--1">
+            <div class="gauche">
+                <img class="frame" src="ressources/images/frames/jechangemavoiture.png">
+                <span class="theme">#Design #Web</span>
+            </div>
+            <div class="droite">
+                <h2 class="site">JeChangeMaVoiture.fr</h2>
+                <p class="description">Site vitrine de vente de voitures d'occasions pour particuliers.</p>
+                <a class="link" href="https://jechangemavoiture.fr" target="_blank">Visiter</a>
+            </div>
+        </div>
+
+        <div class="projet projet--2">
+            <div class="gauche">
+                <img class="frame" src="ressources/images/frames/wineshot.png">
+                <span class="theme">#Video</span>
+            </div>
+            <div class="droite">
+                <h2 class="site">Paroles d'expert</h2>
+                <p class="description">Vidéos promotionnelles de vins d'exception pour WineShot.</p>
+                <a class="link" href="https://www.youtube.com/@wineshot746" target="_blank">Visiter</a>
+            </div>
+        </div>
+
+        <div class="projet projet--3">
+            <div class="gauche">
+                <img class="frame" src="ressources/images/frames/sdpack.png">
+                <span class="theme">#Web</span>
+            </div>
+            <div class="droite">
+                <h2 class="site">SD Pack</h2>
+                <p class="description">Site marchant de vente d'emballages pour produits dangeureux, réalisé avec Prestashop.</p>
+                <a class="link" href="https://sdpack.fr" target="_blank">Visiter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
 
     <!-- Javascript -->
     <script src="index.js"></script>

@@ -126,9 +126,10 @@ header {
                         padding: 6px 12px;
                         border-radius: 6px;
                         font-weight: bold;
+                        color: black;
                         background: linear-gradient(25deg,
-                                                    $degrade_orange_1,
-                                                    $degrade_orange_2 );
+                                                    $degrade_basic_1,
+                                                    $degrade_basic_2 );
                     }
                 }
             }
