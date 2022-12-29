@@ -1,0 +1,126 @@
+@media (min-width: 1000px) {
+  header {
+    top: 0;
+    padding-top: 16px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .branding {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: auto;
+    text-decoration: none;
+    padding-left: 10%;
+  }
+  header .branding img {
+    width: auto;
+    margin: 0;
+    margin-right: 24px;
+  }
+  header .branding h1 {
+    width: auto;
+    color: white;
+    overflow: visible;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  header .button_navigation {
+    display: none;
+  }
+  header nav {
+    height: auto;
+    position: unset;
+    width: auto;
+    background-color: unset;
+    backdrop-filter: blur(0px);
+    transform: none;
+    padding-right: 10%;
+  }
+  header nav ul {
+    flex-flow: row;
+  }
+  .page--home {
+    height: 60vh;
+  }
+  .page--home h2 {
+    display: none;
+  }
+  .page--home .cards_container {
+    flex-flow: row wrap;
+  }
+  .page--home .cards_container .card {
+    width: 240px;
+    height: 320px;
+    margin: 2%;
+  }
+  .page--home .cards_container .card .header {
+    flex-flow: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  .page--home .cards_container .card .header .logo {
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 10px;
+  }
+  .page--home .cards_container .card p {
+    padding: 0 10%;
+  }
+  .page--about {
+    height: 60vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: auto;
+    padding: 10% 10%;
+  }
+  .page--about .alexis {
+    display: inline-block;
+  }
+  .page--about .alexis .blobs {
+    left: unset;
+    top: unset;
+  }
+  .page--about .alexis .competences {
+    left: unset;
+  }
+  .page--about .informations {
+    position: relative;
+    display: inline-block;
+    width: 50vw;
+  }
+}
+@media (min-width: 1250px) {
+  header .branding {
+    padding-left: 15%;
+  }
+  header nav {
+    padding-right: 15%;
+  }
+  .page--about {
+    padding: 10% 15%;
+  }
+  .page--about .informations {
+    width: 45vw;
+  }
+}
+@media (min-width: 1400px) {
+  header .branding {
+    padding-left: 20%;
+  }
+  header nav {
+    padding-right: 20%;
+  }
+  .page--about {
+    padding: 10% 20%;
+  }
+  .page--about .informations {
+    width: 35vw;
+  }
+}
+
+/*# sourceMappingURL=desktop.css.map */

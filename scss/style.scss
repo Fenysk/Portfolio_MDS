@@ -15,3 +15,6 @@ $height_header: 8vh;
     @import 'page--portfolio';
     @import 'footer';
 }
+
+@import 'Formats/tablet';
+@import 'Formats/desktop';

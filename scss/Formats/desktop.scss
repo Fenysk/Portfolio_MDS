@@ -1,0 +1,144 @@
+
+
+@media (min-width: 1000px) {
+    header {
+        top: 0;
+        padding-top: 16px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+
+        .branding {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            width: auto;
+            text-decoration: none;
+            padding-left: 10%;
+
+            img {
+                width: auto;
+                margin: 0;
+                margin-right: 24px;
+            }
+
+            h1 {
+                width: auto;
+                color: white;
+                overflow: visible;
+                font-size: 2rem;
+                white-space: nowrap;
+            }
+        }
+        .button_navigation {
+            display: none;
+        }
+        nav {
+            height: auto;
+            position: unset;
+            width: auto;
+            background-color: unset;
+            backdrop-filter: blur(0px);
+            transform: none;
+            padding-right: 10%;
+
+            ul {
+                flex-flow: row;
+            }
+        }
+    }
+
+    .page--home {
+        height: 60vh;
+        h2 {
+            display: none;
+        }
+
+        .cards_container {
+            flex-flow: row wrap;
+            .card {
+                width: 240px;
+                height: 320px;
+                margin: 2%;
+                .header {
+                    flex-flow: column;
+                    justify-content: space-between;
+                    height: 50%;
+                    .logo {
+                        margin: 0;
+                        height: 100px;
+                        width: 100px;
+                        line-height: 100px;
+                        border-radius: 10px;
+                    }
+                }
+                p {
+                    padding: 0 10%;
+                }
+            }
+        }
+    }
+
+    .page--about {
+        height: 60vh;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: auto;
+        padding: 10% 10%;
+
+        .alexis {
+            display: inline-block;
+
+            .blobs {
+                left: unset;
+                top: unset;
+            }
+            .competences {
+                left: unset;
+            }
+        }
+        .informations {
+            position: relative;
+            display: inline-block;
+            width: 50vw;
+        }
+    }
+}
+
+
+@media (min-width: 1250px) {
+    header {
+        .branding {
+            padding-left: 15%;
+        }
+        nav {
+            padding-right: 15%;
+        }
+    }
+    .page--about {
+        padding: 10% 15%;
+
+        .informations {
+            width: 45vw;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    header {
+        .branding {
+            padding-left: 20%;
+        }
+        nav {
+            padding-right: 20%;
+        }
+    }
+    .page--about {
+        padding: 10% 20%;
+        
+        .informations {
+            width: 35vw;
+        }
+    }
+}
