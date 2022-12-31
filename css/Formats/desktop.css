@@ -83,15 +83,50 @@
   }
   .page--about .alexis .blobs {
     left: unset;
-    top: unset;
   }
   .page--about .alexis .competences {
     left: unset;
+    right: -210px;
   }
   .page--about .informations {
     position: relative;
     display: inline-block;
     width: 50vw;
+  }
+  .page--portfolio .projet {
+    justify-content: center !important;
+    padding: 0 20%;
+  }
+  .page--portfolio .projet .gauche {
+    transform: perspective(500px) rotateY(10deg);
+    transition: all 300ms ease-in-out;
+  }
+  .page--portfolio .projet .gauche .frame {
+    width: auto !important;
+    height: 300px;
+  }
+  .page--portfolio .projet .gauche .theme {
+    font-size: 1.2rem;
+    bottom: -24px;
+  }
+  .page--portfolio .projet .gauche:hover {
+    transform: perspective(500px) rotateY(0deg);
+  }
+  .page--portfolio .projet .droite {
+    margin-left: 5%;
+  }
+  .page--portfolio .projet .droite h2, .page--portfolio .projet .droite p {
+    font-size: 1.4rem !important;
+  }
+  .page--portfolio .projet .droite .link {
+    font-size: 1.2rem;
+  }
+  .page--portfolio .projet--2 .gauche, .page--portfolio .projet--4 .gauche {
+    transform: perspective(500px) rotateY(-10deg);
+  }
+  .page--portfolio .projet--2 .droite, .page--portfolio .projet--4 .droite {
+    margin-left: 0;
+    margin-right: 5%;
   }
 }
 @media (min-width: 1250px) {
