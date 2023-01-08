@@ -37,6 +37,8 @@
 
         .card {
             @include card;
+            position: relative;
+            cursor: default;
             
             &--code {
                 background: $degrade_orange_2;
@@ -100,6 +102,25 @@
                 width: calc(100% - 6px);
                 height: calc(100% - 9px);
                 @include fond_degrade(180deg, $fond_gris, black);
+            }
+
+            .decoration{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                display: none;
+                
+                .images{
+                    position: relative;
+
+                    img{
+                        position: absolute;
+                        height: 150px;
+
+                        transition: all 500ms ease;
+                    }
+                }
             }
 
             &--code:hover {

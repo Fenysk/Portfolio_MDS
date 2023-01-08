@@ -41,7 +41,7 @@ cards.forEach(function(card) {
 
     card.addEventListener('mouseout', function() {
         var pageHome = document.querySelector('.page--home');
-        pageHome.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))';
+        pageHome.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))';
     });
 });
 
